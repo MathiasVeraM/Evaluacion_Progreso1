@@ -7,7 +7,7 @@ Salida: Pares: 50 %, Primos: 25%*/
 
 int main(){
     int n = 0, pares=0, primos=0, i, total=0, numerospares=0, numerosprimos=0;
-    int par=0, primo=0;
+    int par=0, primo=0, porcentajepar=0, porcentajeprimo=0;
     do{
        //Pedir al usuario los valores, y comprobar que quiera seguir con el programa
        printf("Por favor ingrese un numero: ");
@@ -18,13 +18,15 @@ int main(){
         }
         for(int c = 1;c <= n;c++){
             if(n%c==0){
-                primo++;;
+                primo++;
             }
-        }
+        }   
        printf("\ndesea continuar?, pulse 1 para seguir y 0 para parar: ");
        scanf("%d",&i);
     }while(i!=0);
-    printf("Fueron %d numeros pares ingresados", par);
-    printf("\nFueron %d numeros primos ingresados", primo);
+    porcentajepar = (par*100)/total;
+    porcentajeprimo = (primo*100)/total;
+    printf("Porcentaje pares %d%", porcentajepar);
+    printf("\nPorcentaje primos %d%", porcentajeprimo);
     return 0;
 }
