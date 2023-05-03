@@ -2,3 +2,15 @@
 Por ejemplo:
 Entrada: 4 5 6 2 1 -5 9 8
 Salida: Pares: 50 %, Primos: 25%*/
+//Incluir la biblioteca stdio.h
+#include <stdio.h>
+int main(){
+
+
+
+
+
+
+
+    return 0;
+}
