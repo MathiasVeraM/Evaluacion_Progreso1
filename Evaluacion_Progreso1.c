@@ -5,8 +5,14 @@ Salida: Pares: 50 %, Primos: 25%*/
 //Incluir la biblioteca stdio.h
 #include <stdio.h>
 int main(){
-
-
+    int n = 0, pares=0, primos=0, i;
+    do{
+        printf("Por favor ingrese un numero: ");
+        scanf("%d",&n);
+        printf("\ndesea continuar?, pulse 1 para seguir y 0 para parar: ");
+        scanf("%d",&i);
+    }while(i!=0);
+    
 
 
 
